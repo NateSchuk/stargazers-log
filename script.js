@@ -4,7 +4,7 @@ fetch("events.json")
         const list = document.querySelector("#starred");
         events.forEach((event) => {
             const item = document.createElement("li");
-            item.textContent = '${event.name} - starred ${event.starred}';
-            list.appendChilde(item);
+            item.textContent = `${event.name} - starred ${event.starred}`;
+            list.appendChild(item);
         });
     });
